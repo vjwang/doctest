@@ -1,0 +1,53 @@
+<h1>Checklist: Build JavaScript WebSocket Clients</h1>
+<span class="note"><b>Note:</b> To use the KAAZING Gateway, a KAAZING Gateway client library, or a KAAZING Gateway demo, fork the repository from <a href="http://kaazing.org">kaazing.org</a>.</span>
+
+<p>The following checklist provides the steps necessary to build clients to communicate with KAAZING Gateway:</p>
+
+<table class="checklist">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col" width="350px">Step</th>
+    <th scope="col">Topic or Reference</th>
+  </tr>
+  <!-- <tr>
+  <td>1</td>
+    <td>Learn about supported browsers, operating systems, and platform versions.</td>
+    <td><a href="../release-notes.html">Release Notes</a></td>
+  </tr> -->
+  <tr>
+    <td>1</td>
+    <td>Learn how to use the common methods of the HTML5 WebSocket API in your client.</td>
+    <td><a href="p_dev_js_websocket.html">Use the JavaScript WebSocket API</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Learn how to use the common methods of the HTML5 Server-Sent Events standard in your client.</td>
+    <td><a href="p_dev_js_eventsource.html">Use the JavaScript EventSource API</a></td>
+  </tr>
+  <tr>
+       <td>3</td>
+    <td>Migrate your legacy KAAZING Gateway WebSocket or ByteSocket-based client to the WebSocket API-compliant libraries in KAAZING Gateway 5.0.</td>
+    <td><a href="p_dev_js_migrate.html">Migrate JavaScript Applications to KAAZING Gateway 5.0</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Implement a challenge handler in your client to respond to authentication challenges from the Gateway.</td>
+    <td><a href="p_dev_js_secure.html">Secure Your JavaScript Client</a></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Set up logging for your client.</td>
+    <td><a href="p_clientlogging_js.html">Display Logs for the JavaScript Client</a></td>
+  </tr>
+</table>
+
+<h2><a name="overview" id="overview"></a>Overview of KAAZING Gateway WebSocket Library</h2>
+<p>KAAZING Gateway provides support for its HTML5 Communication protocol libraries in JavaScript. Using the JavaScript client library, you can enable the HTML5 Communication protocols (for example, WebSocket and Server-Sent Events) in new or existing web applications. For example, you can create an application that uses WebSocket to get streaming financial data from a back-end server, or you can create a JavaScript client that receives streaming news data through Server-Sent Events. The following figure shows a high-level overview of the architecture:<br>&nbsp;</p>
+
+    <figure>
+        <img src="../images/f-html5-javascript-client2-web.jpg" width="769" height="207" alt="JavaScript client architecture overview">
+    <figcaption><strong>Figure: JavaScript client architecture overview</strong></figcaption>    
+    </figure>
+
+<h2 id="Compliance">KAAZING Gateway Has Full WebSocket API Compliance</h2>
+	<p>Clients built using the KAAZING Gateway JavaScript libraries are fully-compliant with the <a href="http://dev.w3.org/html5/websockets/" title="The WebSocket API">WebSocket API standard</a>. All of the standards and features of the API such as sending and receiving binary using an <a href="http://www.khronos.org/registry/typedarray/specs/latest/" title="Typed Array Specification">ArrayBuffer</a>, ArrayBufferView, and Blob are supported. For more information, see <a href="p_dev_js_websocket.html#datatypes">Supported Data Types</a>.</p>
