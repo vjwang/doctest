@@ -86,8 +86,8 @@
 <ol>
 <li><a name="setup_dev_env"></a><p>Setting Up Your Development Environment.</p>
 <p>To develop applications using the ${gateway.name.long} AMQP client libraries, you must configure ${the.gateway} to communicate with an AMQP broker.</p>
-        <p><span class="note"><b>Note:</b><b></b> If you have the ${gateway.name.long} running on <span class="code_inline">localhost</span> and if you have an AMQP broker running on <span class="code_inline">localhost</span> at the default AMQP port <span class="code_inline">5672</span>, you do not have to configure anything to see the AMQP demos and the interactive AMQP guide.</span></p>
-        <p>The following is an example of the default configuration element for the AMQP service in the ${gateway.name.long} bundle, as specified in the configuration file <span class="code_inline"><em>GATEWAY_HOME</em>/conf/gateway-config.xml</span>:</p>
+<p><span class="note"><b>Note:</b><b></b> If you have the ${gateway.name.long} running on <span class="code_inline">localhost</span> and if you have an AMQP broker running on <span class="code_inline">localhost</span> at the default AMQP port <span class="code_inline">5672</span>, you do not have to configure anything to see the AMQP demos and the interactive AMQP guide.</span></p>
+<p>The following is an example of the default configuration element for the AMQP service in the ${gateway.name.long} bundle, as specified in the configuration file <span class="code_inline"><em>GATEWAY_HOME</em>/conf/gateway-config.xml</span>:</p>
 <pre class="auto-links: false; brush: xml; toolbar: false;">
 &lt;!-- Proxy service to AMQP server --&gt;
 &lt;service&gt;
